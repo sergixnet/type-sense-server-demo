@@ -22,6 +22,7 @@ const usersDataToIndex = [
       street: 'elm street 12',
       postalCode: 452122,
     },
+    bio: 'lorem ipsum dolor sit amet',
     favoritePets: [
       { name: 'fufy', species: 'dog' },
       { name: 'ronaldo', species: 'cat' },
@@ -36,6 +37,7 @@ const usersDataToIndex = [
       street: 'gran vía 12',
       postalCode: 123456,
     },
+    bio: 'Permanently drops a collection. This action cannot be undone. For large collections, this might have an impact on read latencies.',
     favoritePets: [
       { name: 'ananda', species: 'cat' },
       { name: 'geronima', species: 'cat' },
@@ -49,6 +51,7 @@ const usersDataToIndex = [
       street: 'elm street 12',
       postalCode: 452122,
     },
+    bio: "Typesense supports adding or removing fields to a collection's schema in-place.",
     favoritePets: [
       { name: 'spurkle', species: 'dog' },
       { name: 'dori', species: 'fish' },
@@ -81,6 +84,11 @@ const schema = {
       facet: true,
     },
     {
+      name: 'bio',
+      type: 'string',
+      facet: true,
+    },
+    {
       name: 'favoritePets',
       type: 'object[]',
       facet: true,
@@ -89,7 +97,6 @@ const schema = {
   // default_sorting_field: 'name',
 };
 
-/*
 // create collection
 (async () => {
   try {
@@ -98,7 +105,6 @@ const schema = {
     console.log('Error: ', error);
   }
 })();
-*/
 
 // index users
 
