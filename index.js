@@ -19,7 +19,7 @@ let client = new Typesense.Client({
   apiKey: 'local-typesense-api-key',
   connectionTimeoutSeconds: 2,
 });
-
+/*
 // Create book schema
 let booksSchema = {
   name: 'books',
@@ -40,7 +40,7 @@ client
   .then(function (data) {
     console.log(data);
   });
-
+*/
 // Adding books to the collection
 
 const fs = require('fs/promises');
@@ -75,6 +75,6 @@ client
   });
 
 (async function () {
-  const existMyCollection = await client.collections('sdsdsd').exists();
+  const existMyCollection = await client.collections('books').exists();
   console.log({ existMyCollection });
 })();

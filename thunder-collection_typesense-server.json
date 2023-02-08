@@ -1,1 +1,291 @@
-{"client":"Thunder Client","collectionName":"typesense-server","dateExported":"2023-01-28T10:24:39.209Z","version":"1.1","folders":[],"requests":[{"_id":"c924d01a-8ec4-4eb2-a385-024b825694a9","colId":"b4bd341d-99fd-460e-987a-f6acf47e945c","containerId":"","name":"books collection","url":"http://localhost:8108/collections/books","method":"GET","sortNum":18750,"created":"2023-01-28T09:37:29.687Z","modified":"2023-01-28T09:38:31.094Z","headers":[{"name":"X-TYPESENSE-API-KEY","value":"{{type-sense-api-key}}"}],"params":[],"tests":[]},{"_id":"57338bef-0105-40e0-a9bc-eaaad9982d6e","colId":"b4bd341d-99fd-460e-987a-f6acf47e945c","containerId":"","name":"Search books","url":"http://localhost:8108/collections/books/documents/search?query_by=title&q=experyment&facet_by=authors&sort_by=average_rating:desc","method":"GET","sortNum":23125,"created":"2023-01-28T09:53:51.605Z","modified":"2023-01-28T10:10:23.877Z","headers":[{"name":"X-TYPESENSE-API-KEY","value":"{{type-sense-api-key}}"}],"params":[{"name":"q","value":"harry potter","isDisabled":true,"isPath":false},{"name":"query_by","value":"title","isPath":false},{"name":"sort_by","value":"ratings_count:desc","isDisabled":true,"isPath":false},{"name":"filter_by","value":"publication_year:<1998","isDisabled":true,"isPath":false},{"name":"q","value":"experyment","isPath":false},{"name":"facet_by","value":"authors","isPath":false},{"name":"sort_by","value":"average_rating:desc","isPath":false}],"tests":[]},{"_id":"b03511cc-9e21-4665-875f-ac73133cafea","colId":"b4bd341d-99fd-460e-987a-f6acf47e945c","containerId":"","name":"get keys","url":"http://localhost:8108/keys","method":"GET","sortNum":25312.5,"created":"2023-01-28T08:58:52.288Z","modified":"2023-01-28T09:54:18.109Z","headers":[{"name":"X-TYPESENSE-API-KEY","value":"{{type-sense-api-key}}"}],"params":[],"tests":[]},{"_id":"8d6374ba-5fc9-4353-9d60-6e786f22feaf","colId":"b4bd341d-99fd-460e-987a-f6acf47e945c","containerId":"","name":"health","url":"http://localhost:8108/health","method":"GET","sortNum":27500,"created":"2023-01-28T09:18:51.253Z","modified":"2023-01-28T09:19:39.519Z","headers":[],"params":[],"tests":[]}]}
+{
+    "client": "Thunder Client",
+    "collectionName": "typesense-server",
+    "dateExported": "2023-02-08T11:17:53.112Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "b9edbe66-deaa-45c7-8114-47ac3715722b",
+            "colId": "40602f6f-ab74-477e-b03d-551794a66697",
+            "containerId": "",
+            "name": "get collections",
+            "url": "http://localhost:8108/collections/",
+            "method": "GET",
+            "sortNum": 19843.8,
+            "created": "2023-02-08T08:58:28.748Z",
+            "modified": "2023-02-08T08:58:45.478Z",
+            "headers": [
+                {
+                    "name": "X-TYPESENSE-API-KEY",
+                    "value": "{{TYPESENSE_API_KEY}}"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "9990753e-4822-4d7f-a957-0e431969f302",
+            "colId": "40602f6f-ab74-477e-b03d-551794a66697",
+            "containerId": "",
+            "name": "users collection",
+            "url": "http://localhost:8108/collections/users",
+            "method": "GET",
+            "sortNum": 20937.5,
+            "created": "2023-02-03T10:37:23.677Z",
+            "modified": "2023-02-03T10:37:52.282Z",
+            "headers": [
+                {
+                    "name": "X-TYPESENSE-API-KEY",
+                    "value": "{{TYPESENSE_API_KEY}}"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "5930e8cb-808f-434a-b464-f943ea71f8a8",
+            "colId": "40602f6f-ab74-477e-b03d-551794a66697",
+            "containerId": "",
+            "name": "delete users collection",
+            "url": "http://localhost:8108/collections/users",
+            "method": "DELETE",
+            "sortNum": 22031.3,
+            "created": "2023-02-03T11:56:26.363Z",
+            "modified": "2023-02-03T11:56:50.618Z",
+            "headers": [
+                {
+                    "name": "X-TYPESENSE-API-KEY",
+                    "value": "{{TYPESENSE_API_KEY}}"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "bded0ff3-8bcb-4376-843b-39bcba516dfb",
+            "colId": "40602f6f-ab74-477e-b03d-551794a66697",
+            "containerId": "",
+            "name": "Search users",
+            "url": "http://localhost:8108/collections/users/documents/search?q=sir amen&query_by=name,bio",
+            "method": "GET",
+            "sortNum": 24218.8,
+            "created": "2023-02-03T10:40:57.677Z",
+            "modified": "2023-02-03T12:08:23.729Z",
+            "headers": [
+                {
+                    "name": "X-TYPESENSE-API-KEY",
+                    "value": "{{TYPESENSE_API_KEY}}"
+                }
+            ],
+            "params": [
+                {
+                    "name": "q",
+                    "value": "sir amen",
+                    "isPath": false
+                },
+                {
+                    "name": "query_by",
+                    "value": "name,bio",
+                    "isPath": false
+                },
+                {
+                    "name": "sort_by",
+                    "value": "id:desc",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "filter_by",
+                    "value": "publication_year:<1998",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "q",
+                    "value": "experyment",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "facet_by",
+                    "value": "authors",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "sort_by",
+                    "value": "average_rating:desc",
+                    "isDisabled": true,
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "fc257819-6f9a-419b-bed4-5e361d57e4b2",
+            "colId": "40602f6f-ab74-477e-b03d-551794a66697",
+            "containerId": "",
+            "name": "Multiple search",
+            "url": "http://localhost:8108//multi_search?q=batman",
+            "method": "POST",
+            "sortNum": 24492.3,
+            "created": "2023-02-08T09:11:06.364Z",
+            "modified": "2023-02-08T11:12:44.576Z",
+            "headers": [
+                {
+                    "name": "X-TYPESENSE-API-KEY",
+                    "value": "{{TYPESENSE_API_KEY}}"
+                }
+            ],
+            "params": [
+                {
+                    "name": "q",
+                    "value": "batman",
+                    "isPath": false
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"searches\": [\n    {\n      \"collection\": \"posts\",\n      \"query_by\": \"title,body\"\n    },\n    {\n      \"collection\": \"users\",\n      \"query_by\": \"name,email,address,favoritePets\"\n    }\n  ]\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "42c4914f-df71-43ec-8987-0291d35cf99f",
+            "colId": "40602f6f-ab74-477e-b03d-551794a66697",
+            "containerId": "",
+            "name": "Search posts",
+            "url": "http://localhost:8108/collections/posts/documents/search?q=amen, anima&query_by=body&sort_by=userId:desc",
+            "method": "GET",
+            "sortNum": 24765.7,
+            "created": "2023-02-08T09:04:26.459Z",
+            "modified": "2023-02-08T09:08:07.106Z",
+            "headers": [
+                {
+                    "name": "X-TYPESENSE-API-KEY",
+                    "value": "{{TYPESENSE_API_KEY}}"
+                }
+            ],
+            "params": [
+                {
+                    "name": "q",
+                    "value": "amen, anima",
+                    "isPath": false
+                },
+                {
+                    "name": "query_by",
+                    "value": "body",
+                    "isPath": false
+                },
+                {
+                    "name": "sort_by",
+                    "value": "userId:desc",
+                    "isPath": false
+                },
+                {
+                    "name": "filter_by",
+                    "value": "publication_year:<1998",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "q",
+                    "value": "experyment",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "facet_by",
+                    "value": "authors",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "sort_by",
+                    "value": "average_rating:desc",
+                    "isDisabled": true,
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "887a7781-ebba-41de-be99-16bf9e84b439",
+            "colId": "40602f6f-ab74-477e-b03d-551794a66697",
+            "containerId": "",
+            "name": "get keys",
+            "url": "http://localhost:8108/keys",
+            "method": "GET",
+            "sortNum": 25312.5,
+            "created": "2023-01-31T14:55:28.926Z",
+            "modified": "2023-02-03T08:50:26.367Z",
+            "headers": [
+                {
+                    "name": "X-TYPESENSE-API-KEY",
+                    "value": "{{TYPESENSE_API_KEY}}"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "d9ca7b6a-1398-484f-a457-0bc921974241",
+            "colId": "40602f6f-ab74-477e-b03d-551794a66697",
+            "containerId": "",
+            "name": "create a key - search only",
+            "url": "http://localhost:8108/keys",
+            "method": "POST",
+            "sortNum": 25859.4,
+            "created": "2023-02-03T09:15:40.591Z",
+            "modified": "2023-02-03T09:17:12.613Z",
+            "headers": [
+                {
+                    "name": "X-TYPESENSE-API-KEY",
+                    "value": "{{TYPESENSE_API_KEY}}"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"description\": \"Search-only books key.\",\n  \"actions\": [\n    \"documents:search\"\n  ],\n  \"collections\": [\n    \"books\"\n  ]\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "10cd6f1f-873a-4e49-9f90-b9981178b08d",
+            "colId": "40602f6f-ab74-477e-b03d-551794a66697",
+            "containerId": "",
+            "name": "retrieve a key",
+            "url": "http://localhost:8108/keys/2",
+            "method": "GET",
+            "sortNum": 26406.3,
+            "created": "2023-02-03T09:13:01.288Z",
+            "modified": "2023-02-03T09:23:41.185Z",
+            "headers": [
+                {
+                    "name": "X-TYPESENSE-API-KEY",
+                    "value": "{{TYPESENSE_API_KEY}}"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "1c530c99-39de-4989-b6ba-fd5919b64c58",
+            "colId": "40602f6f-ab74-477e-b03d-551794a66697",
+            "containerId": "",
+            "name": "health",
+            "url": "http://localhost:8108/health",
+            "method": "GET",
+            "sortNum": 27500,
+            "created": "2023-01-31T14:55:28.927Z",
+            "modified": "2023-01-31T14:55:28.927Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}
